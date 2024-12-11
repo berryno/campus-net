@@ -29,7 +29,7 @@ const LeftSidebar = () => {
       <div className="flex flex-col gap-11">
         <Link to="/" className="flex gap-3 items-center">
           <img
-            src="/assets/images/logo.svg"
+            src="/assets/images/campusnetbainco.png"
             alt="logo"
             width={170}
             height={36}
@@ -54,7 +54,7 @@ const LeftSidebar = () => {
           </Link>
         )}
 
-        <ul className="flex flex-col gap-6">
+        <ul className="flex flex-col gap-4">
           {sidebarLinks.map((link: INavLink) => {
             const isActive = pathname === link.route;
 
@@ -62,7 +62,7 @@ const LeftSidebar = () => {
               <li
                 key={link.label}
                 className={`leftsidebar-link group ${
-                  isActive && "bg-primary-500"
+                  isActive && "bg-teal-700"
                 }`}>
                 <NavLink
                   to={link.route}

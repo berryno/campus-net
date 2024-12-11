@@ -38,7 +38,7 @@ const SignupForm = () => {
       const newUser = await createUserAccount(user);
 
       if (!newUser) {
-        toast({ title: "Sign up failed. Please try again.", });
+        toast({ title: "Qualcosa è andato storto. Riprova", });
         
         return;
       }
@@ -49,7 +49,7 @@ const SignupForm = () => {
       });
 
       if (!session) {
-        toast({ title: "Something went wrong. Please login your new account", });
+        toast({ title: "Qualcosa è andato storto. Riprova", });
         
         navigate("/sign-in");
         
@@ -63,7 +63,7 @@ const SignupForm = () => {
 
         navigate("/");
       } else {
-        toast({ title: "Login failed. Please try again.", });
+        toast({ title: "Qualcosa è andato storto. Riprova", });
         
         return;
       }
@@ -75,13 +75,13 @@ const SignupForm = () => {
   return (
     <Form {...form}>
       <div className="sm:w-420 flex-center flex-col">
-        <img src="/assets/images/logo.svg" alt="logo" />
+        <img src="/assets/images/campusnetbainco.png" alt="logo" />
 
         <h2 className="h3-bold md:h2-bold pt-5 sm:pt-12">
-          Create a new account
+          Crea un nuovo account
         </h2>
-        <p className="text-light-3 small-medium md:base-regular mt-2">
-          To use snapgram, Please enter your details
+        <p className="text-teal-700 small-medium md:base-regular mt-2">
+          Inserisci le tue info! 
         </p>
 
         <form
@@ -154,10 +154,10 @@ const SignupForm = () => {
           </Button>
 
           <p className="text-small-regular text-light-2 text-center mt-2">
-            Already have an account?
+            Hai già un account?
             <Link
               to="/sign-in"
-              className="text-primary-500 text-small-semibold ml-1">
+              className="text-teal-700 text-small-semibold ml-1">
               Log in
             </Link>
           </p>
