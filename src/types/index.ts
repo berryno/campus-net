@@ -46,3 +46,19 @@ export type INewUser = {
   username: string;
   password: string;
 };
+
+export interface IMessage {
+  id: string;
+  content: string;
+  senderId: string;
+  receiverId: string;
+  createdAt: string;
+  read: boolean;
+}
+
+export interface IChatPreview {
+  id: string;
+  participants: string[];
+  lastMessage?: IMessage;
+  updatedAt: string;
+}

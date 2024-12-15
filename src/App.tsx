@@ -10,9 +10,10 @@ import {
   PostDetails,
   UpdateProfile,
   AllUsers,
+  Chat,
+  Events,
 } from "@/_root/pages";
 import AuthLayout from "./_auth/AuthLayout";
-import Documents from "./_root/pages/Documents";
 import RootLayout from "./_root/RootLayout";
 import SignupForm from "@/_auth/forms/SignupForm";
 import SigninForm from "@/_auth/forms/SigninForm";
@@ -39,7 +40,8 @@ const App = () => {
           <Route path="/create-post" element={<CreatePost />} />
           <Route path="/update-post/:id" element={<EditPost />} />
 
-          <Route path="/documents" element={<Documents />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/chat" element={<Chat />} />
       
           <Route path="/posts/:id" element={<PostDetails />} />
           <Route path="/profile/:id/*" element={<Profile />} />
