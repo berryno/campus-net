@@ -39,7 +39,7 @@ export const MOCK_CHATS: ChatPreview[] = [
     id: '2',
     user: {
       name: 'Bob Johnson',
-      avatar: '/api/placeholder/32/32',
+      avatar: '/assets/icons/profile-placeholder.svg', //cambiare nomi e immagini profilo
       online: false
     },
     lastMessage: {
@@ -52,7 +52,7 @@ export const MOCK_CHATS: ChatPreview[] = [
     id: '3',
     user: {
       name: 'Carol Williams',
-      avatar: '/api/placeholder/32/32',
+      avatar: '/assets/icons/profile-placeholder.svg',
       online: true
     },
     lastMessage: {

@@ -31,7 +31,7 @@ export interface IEvent {
       description: 'Join us for the final year project presentations from Computer Science students.',
       date: '2024-12-20T14:00:00',
       location: 'Main Auditorium',
-      imageUrl: '/assets/icons/event-placeholder.svg',
+      imageUrl: '/assets/icons/event-placeholder.svg',  //mettere immagine
       isApproved: true,
       createdAt: '2024-11-15T10:00:00',
       type: 'physical',
@@ -46,7 +46,7 @@ export interface IEvent {
       description: 'Learn the basics of modern web development with React and TypeScript.',
       date: '2024-12-18T15:00:00',
       location: 'Online',
-      imageUrl: '/assets/icons/event-placeholder.svg',
+      imageUrl: '/assets/icons/event-placeholder.svg', //mettere immagine
       isApproved: true,
       createdAt: '2024-11-14T09:00:00',
       type: 'virtual',
